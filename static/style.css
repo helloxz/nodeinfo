@@ -1,0 +1,27 @@
+.header{
+	background-color:#393D49;
+}
+.footer{
+	width:100%;
+	position:fixed;
+	bottom:0;
+	background: #2F4056;
+	color:#E1E1E1;
+	padding:14px;
+}
+.user{
+	margin-top:50px;
+}
+.left-menu{
+	float: left;
+	padding-top:15px;
+}
+.left-menu a{
+	color:#E1E1E1;
+}
+.right-menu{
+	float: right;
+}
+.menu{
+	float: left;
+}
