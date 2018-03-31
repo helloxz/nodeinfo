@@ -33,11 +33,11 @@
 			//内存
 			$ram_total = round($value->ram_total / 1024 / 1024);
 			$ram_use = round($value->ram_usage / 1024 / 1024);
-			$ram_percent = round($value->ram_usage / $value->ram_total * 100);
+			$ram_percent = @round($value->ram_usage / $value->ram_total * 100);
 			//磁盘
 			$disk_total = round($value->disk_total / 1024 / 1024 / 1024);
 			$disk_usage = sprintf("%.1f", $value->disk_usage / 1024 / 1024 / 1024); 
-			$disk_percent = round($value->disk_usage / $value->disk_total * 100);
+			$disk_percent = @round($value->disk_usage / $value->disk_total * 100);
 			//网络
 			$network_rx = round($value->current_rx / 1024 / 180);
 			$network_tx	= round($value->current_tx / 1024 / 180);
