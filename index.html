@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="zh-cmn-Hans" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta charset="utf-8" />
 	<title>NodeInfo</title>
 	<meta name="generator" content="EverEdit" />
-	<meta name="author" content="" />
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
+	<meta name="author" content="xiaoz.me" />
+	<meta name="keywords" content="NodeInfo,NodeQuery" />
+	<meta name="description" content="NodeInfo使用NodeQuery API提供的数据，提供简易的服务器监控信息，可以很方便的放到自己网站，供管理员参阅查看。" />
+	<link rel="shortcut icon" href="favicon.ico"  type="image/x-icon" />
+	<link rel="Bookmark" href="favicon.ico" />
 	<link rel="stylesheet" href="static/layui/css/layui.css">
 	<link rel="stylesheet" href="static/style.css">
 </head>
@@ -17,6 +19,12 @@
 			<div class = "layui-row">
 				<div class = "lay-col-lg12">
 					<div class="left-menu"><a href="./"><h1>NodeInfo</h1></a></div>
+					<div class = "right-menu">
+						<ul class="layui-nav" lay-filter="">
+						  <li class="layui-nav-item"><a href="https://github.com/helloxz/nodeinfo" target = "_blank" rel = "nofollow"><i class="layui-icon">&#xe64e;</i> 源码下载</a></li>
+						  <li class="layui-nav-item"><a href="https://www.xiaoz.me/archives/10153" target = "_blank"><i class="layui-icon">&#xe607;</i> 关于</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -30,20 +38,24 @@
 			<div>
 				<table class="layui-table" id = "node">
 				  <colgroup>
-				    <col width="120">
+				    <col width="130">
+				    <col width="90">
 				    <col width="150">
-				    <col width="200">
-				    <col width="200">
+				    <col width="180">
+				    <col width="180">
+				    <col width="150">
+					<col width="160">
 				    <col>
 				  </colgroup>
 				  <thead>
 				    <tr>
 				      <th>主机</th>
+				      <th>CPU</th>
 				      <th>负载</th>
 				      <th>内存</th>
 				      <th>磁盘</th>
 				      <th>网络</th>
-				      <th>可用性</th>
+				      <th>可用性（供参考）</th>
 				      <th>当前状态</th>
 				    </tr> 
 				  </thead>
@@ -51,6 +63,7 @@
 
 				  </tbody>
 				</table>
+				<div id = "loading"><center><img src="static/loading.gif" alt=""></center></div>
 			</div>
 			<!--内容部分-->
 		</div>
@@ -62,7 +75,7 @@
 		<div class = "layui-container">
 			<div class = "layui-row">
 				<div class = "lay-col-lg12">
-					Copyright © 2018 Powered by IPinfo. | Author xiaoz.me
+					Copyright © 2018 Powered by <a href="https://github.com/helloxz/nodeinfo" rel = "nofollow" target = "_blank">NodeInfo</a>. | Author <a href="https://www.xiaoz.me/" rel = "nofollow" target = "_blank">xiaoz.me</a>
 				</div>
 			</div>
 		</div>

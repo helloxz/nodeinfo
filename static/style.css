@@ -9,12 +9,17 @@
 	color:#E1E1E1;
 	padding:14px;
 }
+.footer a{
+	color:#E1E1E1;
+}
 .user{
 	margin-top:50px;
 }
 .left-menu{
 	float: left;
+	/*padding-top:15px;*/
 	padding-top:15px;
+	/*padding-bottom:12px;*/
 }
 .left-menu a{
 	color:#E1E1E1;
